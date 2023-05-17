@@ -72,7 +72,6 @@
 		8BA5FFE72A141F7600381D34 = {
 			isa = PBXGroup;
 			children = (
-				8BB0F8542A15013800EE6E17 /* ScrumProgressViewStyle.swift */,
 				8BA5FFF22A141F7600381D34 /* Scrumdinger */,
 				8BA5FFF12A141F7600381D34 /* Products */,
 			);
@@ -94,6 +93,7 @@
 				8BA5FFF52A141F7600381D34 /* MeetingView.swift */,
 				8BB0F8582A1504EC00EE6E17 /* MeetingFooterView.swift */,
 				8BA500062A14285700381D34 /* CardView.swift */,
+				8BB0F8542A15013800EE6E17 /* ScrumProgressViewStyle.swift */,
 				8BABB4012A143B85005A14B3 /* DetailEditView.swift */,
 				8BB0F8522A14F0D800EE6E17 /* MeetingHeaderView.swift */,
 				8BABB3FD2A143081005A14B3 /* ScrumsView.swift */,
