@@ -18,6 +18,7 @@
 		8B3E02472A15705300158671 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E02462A15705300158671 /* SpeakerArc.swift */; };
 		8B3E02492A157FCE00158671 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E02482A157FCE00158671 /* SpeechRecognizer.swift */; };
 		8B3E024B2A15835F00158671 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E024A2A15835F00158671 /* HistoryView.swift */; };
+		8B3E024F2A161B8B00158671 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E02512A161B8B00158671 /* Localizable.strings */; };
 		8BA500032A14267100381D34 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA500022A14267100381D34 /* Theme.swift */; };
 		8BA500052A1427EC00381D34 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA500042A1427EC00381D34 /* DailyScrum.swift */; };
 		8BA500072A14285700381D34 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA500062A14285700381D34 /* CardView.swift */; };
@@ -62,6 +63,8 @@
 		8B3E02462A15705300158671 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		8B3E02482A157FCE00158671 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		8B3E024A2A15835F00158671 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8B3E02502A161B8B00158671 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B3E02522A161D5C00158671 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8BA500022A14267100381D34 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8BA500042A1427EC00381D34 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		8BA500062A14285700381D34 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 				8B3E02442A156F8100158671 /* MeetingTimerView.swift */,
 				8BABB4012A143B85005A14B3 /* DetailEditView.swift */,
 				8BB0F8522A14F0D800EE6E17 /* MeetingHeaderView.swift */,
+				8B3E02512A161B8B00158671 /* Localizable.strings */,
 				8BABB3FD2A143081005A14B3 /* ScrumsView.swift */,
 				8B3E02242A1515CF00158671 /* NewScrumSheet.swift */,
 				8BABB3FF2A14366F005A14B3 /* DetailView.swift */,
@@ -211,6 +215,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8BA5FFE72A141F7600381D34;
 			productRefGroup = 8BA5FFF12A141F7600381D34 /* Products */;
@@ -228,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3E02232A15103E00158671 /* ding.wav in Resources */,
+				8B3E024F2A161B8B00158671 /* Localizable.strings in Resources */,
 				8BA5FFFB2A141F7700381D34 /* Preview Assets.xcassets in Resources */,
 				8BA5FFF82A141F7700381D34 /* Assets.xcassets in Resources */,
 			);
@@ -270,6 +276,18 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8B3E02512A161B8B00158671 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3E02502A161B8B00158671 /* en */,
+				8B3E02522A161D5C00158671 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		8BA500002A141F7700381D34 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -283,6 +301,7 @@
 				DEVELOPMENT_TEAM = R3NM94F66F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -368,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -430,6 +451,7 @@
 				DEVELOPMENT_TEAM = R3NM94F66F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
